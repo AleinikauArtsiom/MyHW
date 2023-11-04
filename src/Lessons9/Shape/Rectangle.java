@@ -1,7 +1,24 @@
 package Lessons9.Shape;
 
-import Lessons9.Shapee;
+ class Rectangle extends Shapee {
+    double a;
+    double b;
+    public Rectangle (double a, double b){
+        this.a = a;
+        this.b = b;
 
-public class Rectangle extends Shapee {
+    }
+    public double pP (){
+        double rectangleP = a + b  + a + b;
+        //System.out.println("P - " + rectangleP);
+        return rectangleP;
+    }
+    public double sS(){
+        double rectangleS = a*b;
+        //System.out.println("S - " + rectangleS);
+        return rectangleS;
+    }
+
+
 
 }
