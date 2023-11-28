@@ -10,9 +10,9 @@ public class Main {
         User user1 = new User("bob", "qwert258@mail.ru");
         User user2 = new User("john", "fyjd@mail.ru");
         User user3 = new User("bob", "qwert258@mail.ru");
-        System.out.println("User1 " + user1.toString());
-        System.out.println("User2 " + user2.toString());
-        System.out.println("User3 " + user3.toString());
+        System.out.println("User1 " + user1);
+        System.out.println("User2 " + user2);
+        System.out.println("User3 " + user3);
 
         System.out.println("----------------------------------------------------");
 

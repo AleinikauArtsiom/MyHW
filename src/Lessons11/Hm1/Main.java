@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         //SCANNER CONSOL
         System.out.println("write text for the first line");
         String string1 = scan.nextLine();
