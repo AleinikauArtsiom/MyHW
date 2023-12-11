@@ -6,10 +6,10 @@ public class Minmin implements Runnable{
             synchronized (Main.class) {
                 if (Main.array[i] < Main.min) {
                     Main.min = Main.array[i];
-
                 }
             }
         }
+        System.out.println("MIN --> " + Main.min);
 
     }
 

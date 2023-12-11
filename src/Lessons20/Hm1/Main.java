@@ -12,23 +12,23 @@ public class Main {
         Пользователь вводит с клавиатуры значение в массив. После чего запускаются два
         потока. Первый поток находит максимум в массиве, второй — минимум. Результаты
         вычислений возвращаются в метод main().*/
-        Scanner scan = new Scanner(System.in);
+       // Scanner scan = new Scanner(System.in);
         Thread threadMax = new Thread(new Maxmax());
         Thread threadMin = new Thread(new Minmin());
-        System.out.println("Write number 1 -- MAX; write number 2 -- MIN");
+       // System.out.println("Write number 1 -- MAX; write number 2 -- MIN");
        try {
-           int number = scan.nextInt();
-           if (number == 1) {
+         //  int number = scan.nextInt();
+          // if (number == 1) {
                threadMax.start();
                threadMax.join();
-               System.out.println("MAX: " + Main.max);
-           }
-           if (number == 2) {
+
+         //  }
+          // if (number == 2) {
                threadMin.start();
                threadMin.join();
-               System.out.println("MIN: " + Main.min);
-           }
-           scan.close();
+
+          // }
+          // scan.close();
 
        } catch (InterruptedException e ) {
         e.printStackTrace();

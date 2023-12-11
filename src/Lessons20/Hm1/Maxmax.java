@@ -6,10 +6,10 @@ public class Maxmax implements Runnable {
         synchronized (Main.class) {
             if (Main.array[i] > Main.max) {
                 Main.max = Main.array[i];
-
             }
         }
     }
+        System.out.println("MAX --> " + Main.max);
 
     }
 
